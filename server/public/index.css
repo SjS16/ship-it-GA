@@ -1,0 +1,24 @@
+<style>
+.gaData {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.gaData td, .gaData th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.gaData tr:nth-child(even){background-color: #f2f2f2;}
+
+.gaData tr:hover {background-color: #ddd;}
+
+.gaData th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #0033ff;
+  color: white;
+}
+</style>
