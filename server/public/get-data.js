@@ -24,6 +24,10 @@
     startDate: "14daysAgo",
     endDate: "7daysAgo"
   };
+  const LAST_YEAR = {
+    startDate: "365daysAgo",
+    endDate: "today"
+  };
 
   const runQuery = metrics =>
     gapi.client.request({
@@ -32,7 +36,7 @@
         reportRequests: [
           {
             viewId: VIEW_ID,
-            dateRanges: [LAST_WEEK, THIS_WEEK],
+            dateRanges: [LAST_YEAR],
             metrics: metrics.map(name => ({ expression: `ga:${name}` })),
             dimensions: [
               {
